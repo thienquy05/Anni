@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.background {
+  background-image: url("/images/log-in-bg.png");
+  width: 100%;
+  height: 100vh;
+  background-repeat: none;
+  background-size: cover;
+  background-position: center;
+}
+
+.box-btn {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: none;
+}
+
+#open-btn {
+  padding: 20px;
+  border: none;
+  background-color: #E6D6FD;
+  width: 200px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: large;
+  color: #7158e2;
+}
+
+#open-btn:hover, #open-btn:focus {
+  background-color: #F168BF;
+  color: #E6D6FD;
+}
+
+#open-btn:hover:active, .submit-btn:hover:active {
+  transform: scale(0.8);
+  box-shadow: 0 3px 4px -1px rgba(0, 0, 0, 0.8);
+}
+
+#pop-out {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 250px;
+  background-color: #E6D6FD;
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px grey;
+}
+
+h1 {
+  margin-top: 25px;
+  display: block;
+  text-align: center;
+  background: linear-gradient(90deg, #7158e2, #F168BF, #fdcb6e, #7158e2);
+  background-size: 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: move 5s ease-in-out infinite;
+}
+
+@keyframes move {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 50% 0;
+  }
+}
+label {
+  display: none;
+}
+
+input[type=password] {
+  position: inherit;
+  padding: 10px;
+  margin: 10px;
+  border: none;
+  border-radius: 10px;
+  border-bottom: 2px solid #ccc;
+  font-size: 16px;
+  background-color: #CCADFA;
+}
+
+p {
+  opacity: 50%;
+}
+
+input[type=submit] {
+  padding: 10px;
+  margin: 10px;
+  width: 100px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  background-color: #7158e2;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: whitesmoke;
+  color: #7158e2;
+}
+
+.submit-btn {
+  position: relative;
+  top: 60%;
+  left: 56%;
+}
+
+button {
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+#close-btn {
+  position: absolute;
+  top: 4%;
+  right: 3%;
+  border-radius: 30%;
+  padding: 5px 5px;
+  background-color: transparent;
+}/*# sourceMappingURL=index.css.map */
