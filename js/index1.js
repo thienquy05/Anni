@@ -15,6 +15,18 @@ window.onload = function() {
   audio.load();
 }
 
+//paralax effect
+window.addEventListener('scroll', function(){
+  let offset = window.pageYOffset;
+  this.document.querySelector('.background').style.backgroundPositionY = offset * 0.5 + 'px'
+})
+
+//paralax effect
+window.addEventListener('scroll', function(){
+  let offset = window.pageYOffset;
+  this.document.querySelector('.layer').style.backgroundPositionY = offset * 0.7 + 'px'
+})
+
 // June
 const slideshowJune = document.querySelector('.slideshow-June');
 const slidesJune = slideshowJune.querySelector('.slides');

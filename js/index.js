@@ -25,7 +25,7 @@ closeBtn.addEventListener("click", function() {
 function checkPassword(event) {
     event.preventDefault(); // Ngăn chặn sự kiện mặc định của nút Submit của form
     var password = document.getElementById("password").value;
-    if (password === "emyeuanh") {
+    if (password === "04022022") {
         window.location.assign("/index0.html");
         return true;
     } else {

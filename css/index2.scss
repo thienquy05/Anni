@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400;700&family=Caveat:wght@500;700&family=Sono:wght@400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    background-color: transparent;
+    width: 100%;
+    margin-top: 10px;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    column-gap: 10%;
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    position: relative;
+    padding: 5px;
+    margin: 0;
+    border-radius: 10px;
+    color: #ff7675;
+    font-size: 25px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+a:hover {
+    background-color: #555;
+    opacity: 60%;
+    color: white;
+    box-shadow: 2px 2px 5px 0 rgba(0,0,0,0.5);
+}
